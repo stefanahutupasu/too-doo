@@ -1,0 +1,105 @@
+body {
+    font-family: 'Patrick Hand SC', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #dcedc8; /* Light green background */
+}
+
+#app {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #c5e1a5; /* Matcha green */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+    color: #546e7a; /* Dark grayish-blue text */
+}
+
+#todo-container {
+    margin-top: 20px;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #aed581; /* Lighter green border */
+    padding: 10px 0;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#new-task {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#add-task-btn {
+    background-color: #558b2f; /* Dark green button background */
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #33691e; /* Darker green on hover */
+}
+
+.resizable-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #546e7a; /* Dark grayish-blue border */
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
+
+.todo-item label {
+    font-size: 22px; 
+}
+
+
+.todo-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #546e7a; /* Dark grayish-blue border */
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style the checked state of checkboxes */
+.todo-item input[type="checkbox"]:checked {
+    background-color: #558b2f; /* Dark green background when checked */
+    border: 2px solid #33691e; /* Darker green border when checked */
+}
+
+/* Style the checkmark inside the checkboxes */
+.todo-item input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Unicode checkmark character */
+    font-size: 14px;
+    color: #fff; /* White checkmark color */
+    position: absolute;
+    top: 1px;
+    left: 4px;
+}
