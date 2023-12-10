@@ -118,5 +118,5 @@ h1 {
 
 /* Darken the button color on hover */
 .todo-item button:hover {
-    background-color: #33691e; /* Darker coral color on hover */
+    background-color: #33691e; /* Darker green color on hover */
 }
