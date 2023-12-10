@@ -46,18 +46,18 @@ h1 {
     margin-right: 10px;
 }
 
-#add-task-btn {
-    background-color: #558b2f; /* Dark green button background */
+/* #add-task-btn {
+    background-color: #558b2f;
     color: #fff;
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
-#add-task-btn:hover {
-    background-color: #33691e; /* Darker green on hover */
-}
+/* #add-task-btn:hover {
+    background-color: #33691e; 
+} */
 
 .resizable-handle {
     position: absolute;
@@ -106,7 +106,7 @@ h1 {
 
 
 /* Style the delete button */
-.todo-item button {
+.todo-item button, #add-task-btn {
     background-color: #558b2f; /* Coral color for the delete button */
     color: #fff;
     padding: 8px 12px;
@@ -117,6 +117,6 @@ h1 {
 }
 
 /* Darken the button color on hover */
-.todo-item button:hover {
+.todo-item button:hover, #add-task-btn:hover {
     background-color: #33691e; /* Darker green color on hover */
 }
