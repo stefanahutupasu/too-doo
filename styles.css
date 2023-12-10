@@ -103,3 +103,20 @@ h1 {
     top: 1px;
     left: 4px;
 }
+
+
+/* Style the delete button */
+.todo-item button {
+    background-color: #558b2f; /* Coral color for the delete button */
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Darken the button color on hover */
+.todo-item button:hover {
+    background-color: #33691e; /* Darker coral color on hover */
+}
