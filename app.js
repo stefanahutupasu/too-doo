@@ -32,8 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function toggleComplete() {
         const listItem = this.parentNode;
-        listItem.classList.toggle('complete');
+       
+        const taskLabel = listItem.querySelector('label');
+        taskLabel.classList.toggle('complete');
     }
+    
 
     function deleteTask() {
         const listItem = this.parentNode;
